@@ -1,31 +1,70 @@
-@import "./blocks/_footer.scss";
-@import "./blocks/_header.scss";
-
+@import "./blocks/footer.scss";
 
 $primary-color: #03088E;
 $secondary-color: #F8D01B;
 $base-font-size: 16px;
 
-h1 {
-    color:$primary-color;
-}
-
-.button {
+body {
+    max-width: 1062px;
+    width: 100%;
+    margin: auto;
     background-color: $secondary-color;
-}
-
-p{
-    font-size: $base-font-size*1.25;
-}
-
-nav {
-    ul {
-        list-style: none;
-
-        a{
-            display: block;
-            padding: 6px 12px;
-            text-decoration: none;
-        }
-    }
-}
+    background: url("../img/background.png") no-repeat center;
+    height: 100%;
+    color: $primary-color;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    margin-bottom: 200px;
+  }
+  
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .menu-item:not(:last-child) {
+    margin-right: 63px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  .main-text {
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 53px;
+    line-height: 62px;
+  }
+  
+  .quote {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    opacity: 0.7;
+    margin-left: 30px;
+  }
+  
+  .button-order {
+    all: unset;
+    background: $secondary-color;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 22px 55px;
+    margin-left: 30px;
+  }
+  
+  .main {
+    max-width: 500px;
+  }
